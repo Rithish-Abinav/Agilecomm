@@ -50,9 +50,9 @@
                 <div class="mobile_close mobile_menu_icon">  <img src="./assets/close.svg" width="30" height="30" alt=""></div>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="./index.html#about">About Us</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#contact">Contact Us</a></li>
                 </ul>
             </nav>
             <a href="#contact" class="enquire_now common_btn btn_blue">
@@ -108,7 +108,7 @@
       Have questions or need a custom communication solution? Reach out to our experts today.
       We're here to understand your needs and help you get started with a perfect plan.
     </p>
-    <a class="common_btn btn_orange" href="#contact">
+    <a class="common_btn btn_orange" href="#contact" id="about">
       <img src="./assets/button_icon.svg" width="33" height="33">Connect Now
     </a>
   </div>
@@ -117,7 +117,7 @@
         </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" >
         <div class="container flex row">
             <div class="image" data-aos="fade-right"> <img src="./assets/about_img.png" width="642" height="574" alt="agilecomm-technologies-about"> </div>
             <div class="content flex column">
@@ -133,7 +133,7 @@
                     high-performance mobile app solutions powered by Google’s Flutter for both iOS and Android, enabling
                     businesses to expand their digital presence, enhance accessibility, and deliver superior customer
                     experiences. Whether through messaging or mobile applications, we empower businesses to stay
-                    connected and grow efficiently.</p>
+                    connected and grow efficiently.<span id="services"></span></p>
             </div>
         </div>
     </section>
@@ -361,13 +361,13 @@
                 <div class="card" data-aos="fade-up" data-aos-delay="450">
                     <img src="./assets/real-time-analytics.png" width="273" height="182">
                     <h3 class="white">Real-Time Analytics</h3>
-                    <p class="white font-300">Gain insights with advanced analytics to optimize your communication campaigns.</p>
+                    <p class="white font-300" id="contact">Gain insights with advanced analytics to optimize your communication campaigns.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" >
         <div class="container">
             <div class="content flex column common_content">
                 <p class="heading_tags orange" data-aos="fade-up">Contact Us</p>
@@ -383,6 +383,7 @@
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="tel" name="number" placeholder="Mobile Number" required>
+                <div class="select_box">
                 <select name="services" required>
                     <option value="select" selected disabled>Select Services</option>
                     <option value="sms">SMS</option>
@@ -392,6 +393,7 @@
                     <option value="voice">Voice</option>
                     <option value="mobile">Mobile</option>
                 </select>
+            </div>
                 <textarea name="message" placeholder="Message" required></textarea>
                 <button class="common_btn btn_blue" type="submit"><img src="./assets/button_icon.svg" width="33" height="33">Send Message</button>
                 </form>
