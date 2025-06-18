@@ -497,7 +497,33 @@ margin: auto
 
 .contact .main .map{
     width: 55%;
-    align-items: center;
+    align-items: stretch;
+    display: flex;
+    gap: 20px;
+
+}
+
+.contact .main .map .links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 24px;
+    width: 50%;
+}
+
+.contact .main .map iframe{
+    width: 50%;
+}
+
+.contact .main .map a{
+    transition: 0.3s all;
+    color: black;
+}
+
+.contact .main .map a:hover{
+    color: var(--orange);
 }
 
 ::placeholder{
@@ -759,6 +785,15 @@ z-index: 999999999;
 }
 
 @media screen and (max-width:768px)   {
+
+    .contact .main .map{
+        flex-direction: column;
+    }
+
+    .contact .main .map .links,
+    .contact .main .map iframe{
+        width: 100%;
+    }
 
     header .container nav ul {
         gap: 24px;
